@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+.tracking-page {
+  @apply max-w-[850px] mt-[90px] mb-[100px] px-[30px] mx-[auto];
+}
+
+.tracking-page .back-to-orders-link {
+  @apply block mb-[30px];
+}
+
+.tracking-page .delivery-date {
+  @apply text-[25px] font-bold mb-[10px];
+}
+
+.tracking-page .product-info {
+  @apply mb-[3px];
+}
+
+.tracking-page .product-image {
+  @apply max-w-[150px] max-h-[150px] mt-[25px] mb-[50px];
+}
+
+.tracking-page .progress-labels-container {
+  @apply flex content-between justify-between text-[20px] font-[500] mb-[15px];
+}
+
+.tracking-page .current-status {
+  @apply text-[rgb(25,135,84)];
+}
+
+@media (max-width: 575px) {
+  .tracking-page .progress-labels-container {
+    @apply text-[16px];
+  }
+}
+
+@media (max-width: 450px) {
+  .tracking-page .progress-labels-container {
+    @apply flex-col mb-[5px];
+  }
+
+  .tracking-page .progress-label {
+    @apply mb-[3px];
+  }
+}
+
+.tracking-page .progress-bar-container {
+  @apply h-[25px] w-full border border-[#c8c8c8] rounded-[50px] overflow-hidden;
+}
+
+.tracking-page .progress-bar {
+  @apply h-full bg-[rgb(25,135,84)] rounded-[50px] w-[50%]
+}

@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+.header {
+  @apply fixed top-0 left-0 right-0
+    flex items-center justify-between
+    h-[60px]
+    px-[15px]
+    bg-[#084f2d]
+    text-white;
+}
+
+.header .left-section {
+  @apply w-[208px];
+}
+
+@media (max-width: 800px) {
+  .header .left-section {
+    @apply w-auto;
+  }
+}
+
+.header .header-link {
+  @apply inline-block
+    py-[6px] px-[9.5px]
+    rounded-[2px]
+    cursor-pointer
+    no-underline
+    border border-[rgba(0,0,0,0)];
+}
+
+.header .header-link:hover {
+  @apply border border-white;
+}
+
+.header .logo {
+  @apply h-[26px] mt-[1px];
+}
+
+.header .mobile-logo {
+  @apply hidden;
+}
+
+@media (max-width: 675px) {
+  .header .logo {
+    @apply hidden;
+  }
+
+  .header .mobile-logo {
+    @apply block h-[26px] mt-[1px];
+  }
+}
+
+.header .middle-section {
+  @apply flex flex-1
+    max-w-[850px]
+    mx-[10px];
+}
+
+.header .search-bar {
+  @apply flex-1 w-0 h-[40px] pl-[15px] text-[16px] border-none rounded-l-[5px] rounded-r-none bg-[#ffff] text-black;
+}
+
+.header .search-button {
+  @apply flex-shrink-0 w-[45px] h-[40px] bg-[#baffbe] border-none rounded-r-[5px] rounded-l-none flex items-center justify-center;
+}
+
+.header .search-icon {
+  @apply h-[20px] ml-0 mt-[px];
+}
+
+.header .right-section {
+  @apply flex-shrink-0
+    flex
+    justify-end
+    w-[180px];
+}
+
+.header .orders-link {
+  @apply flex items-center
+    px-[13px]
+    text-white;
+}
+
+.header .orders-link.active {
+  @apply underline;
+}
+
+.header .orders-text {
+  @apply block
+    text-[15px]
+    font-bold;
+}
+
+.header .cart-link {
+  @apply relative
+    flex items-center
+    text-white;
+}
+
+.header .cart-icon {
+  @apply w-[38px];
+}
+
+.header .cart-text {
+  @apply ml-[5px]
+    text-[15px]
+    font-bold;
+}
+
+.header .cart-quantity {
+  @apply absolute
+    top-[6.5px]
+    right-[47px]
+    w-[26px]
+    text-center
+    text-[14px]
+    font-bold
+    text-[#084f2d];
+}

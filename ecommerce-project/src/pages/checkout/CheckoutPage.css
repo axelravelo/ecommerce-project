@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+.checkout-page {
+    @apply max-w-[1100px] px-[30px] mt-[140px] mb-[100px] ml-auto mr-auto;
+}
+
+.checkout-page .page-title {
+    @apply font-bold text-[22px] mb-[18px];
+}
+
+.checkout-page .checkout-grid {
+    @apply grid grid-cols-[1fr_350px] gap-[12px] items-start;
+}
+
+@media (max-width: 1000px) {
+  .checkout-page .main {
+    @apply max-w-[500px];
+  }
+
+  .checkout-page .checkout-grid {
+    @apply grid grid-cols-[1fr];
+  }
+}
+
+.checkout-page .cart-item-container,
+.checkout-page .payment-summary {
+    @apply border-[1px] border-gray-300 rounded-[4px] p-[18px];
+}   
+
+.checkout-page .cart-item-container {
+    @apply mb-[12px];
+}
+
+.checkout-page .payment-summary {
+    @apply pb-[5px];
+}
+
+@media (max-width: 1000px) {
+  .checkout-page .payment-summary {
+    @apply grid-rows-1 mb-[12px];
+  }
+}
+
+.checkout-page .delivery-date {
+    @apply text-[rgb(25,135,84)] font-bold text-[19px] mt-[5px] mb-[22px];
+}
+
+.checkout-page .cart-item-details-grid {
+    @apply grid grid-cols-[100px_1fr_1fr] gap-x-[25px];
+}
+
+@media (max-width: 1000px) {
+  .checkout-page .cart-item-details-grid {
+    @apply grid grid-cols-[100px_1fr] gap-x-[30px];
+  }
+}
+
+.checkout-page .product-image {
+    @apply max-w-[100%] max-h-[120px] ml-auto mr-auto;
+}
+
+.checkout-page .product-name {
+    @apply font-bold mb-[8px];
+}
+
+.checkout-page .product-price {
+    @apply font-bold mb-[5px];
+}
+
+.checkout-page .product-quantity .link-primary {
+  @apply ml-[3px];
+}
+
+@media (max-width: 1000px) {
+  .checkout-page .delivery-options {
+    @apply grid grid-cols-1 col-span-2;
+  }
+}
+
+.checkout-page .delivery-options-title {
+    @apply font-bold mb-[10px];
+}
+
+.checkout-page .delivery-option {
+    @apply grid grid-cols-[24px_1fr] cursor-pointer mb-[12px];
+}
+
+.checkout-page .delivery-option-input {
+    @apply mt-[3px] mr-[5px] mb-0 ml-0 cursor-pointer;
+}
+
+.checkout-page .delivery-option-date {
+    @apply font-bold mb-[3px];
+}
+
+.checkout-page .delivery-option-price {
+    @apply text-[rgb(120,120,120)];
+}
+
+.checkout-page .payment-summary-title {
+    @apply font-bold text-[18px] mb-[12px];
+}
+
+.checkout-page .payment-summary-row {
+    @apply grid grid-cols-[1fr_auto] text-[15px] mb-[9px];
+}
+
+.checkout-page .payment-summary-money {
+    @apply text-right;
+}
+
+.checkout-page .subtotal-row .payment-summary-money {
+    @apply  border-t border-[#dedede];  
+}
+
+.checkout-page .subtotal-row div {
+    @apply pt-[9px];
+}
+
+.checkout-page .total-row {
+    @apply text-[rgb(25,135,84)] font-bold text-[18px] border-t border-[#dedede] pt-[18px];
+}
+
+.checkout-page .place-order-button {
+    @apply w-[100%] pt-[12px] pb-[12px] rounded-[5px] mt-[20px] mb-[19px] text-white;
+}
+
+.checkout-page .update-text-input {
+    @apply w-[50px] border-r border-b border-[rgb(0,0,0)] ml-[5px];
+}

@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+body {
+  @apply font-['Roboto',Arial] text-[rgb(33,33,33)] m-0;
+}
+
+/* Remove the default margins of <p> elements. */
+p {
+  @apply m-0
+}
+
+button {
+  @apply text-[14px] cursor-pointer;
+}
+
+select {
+  @apply cursor-pointer;
+}
+
+input, select, button {
+  font-family: Roboto, Arial;
+}
+
+.button-primary {
+  @apply bg-[#198754] border-solid border-transparent rounded-[5px] cursor-pointer shadow-[0_2px_5px_rgba(220,220,220,0.5)];
+}
+
+.button-primary:hover {
+  @apply bg-[rgba(25,135,84,0.75)] border-solid border-transparent
+}
+
+.button-primary:active {
+  @apply bg-[rgba(25,135,84,0.75)] border-[rgba(25,135,84,0.5)];
+}
+
+.button-secondary {
+  @apply text-[rgb(33,33,33)] bg-white border-solid border-[rgba(200,200,200)] rounded-[5px] cursor-pointer shadow-[0_2px_5px_rgba(220,220,220,0.2)];
+}
+
+.button-secondary:hover {
+  @apply bg-[rgba(250,250,250,1.0)];
+}
+
+.button-secondary:active {
+  @apply bg-[rgba(240,240,240,1.0)] shadow-none;
+}
+
+.limit-text-to-2-lines {
+  @apply line-clamp-2;
+}
+
+.link-primary {
+  @apply text-[rgb(25,135,84)] cursor-pointer;
+}
+
+.link-primary:hover {
+  @apply opacity-[0.75];
+}
+
+.link-primary:active {
+  @apply opacity-[0.5];
+}
+
+/* Styles for dropdown selectors. */
+select {
+  @apply text-[#212121]
+    bg-white
+    border
+    border-[#c8c8c8]
+    rounded-[5px]
+    py-[3px]
+    px-[5px]
+    cursor-pointer
+    shadow-[0_2px_5px_rgba(200,200,200,0.2)];
+
+}
+
+select:focus,
+input:focus {
+  @apply outline-2 outline-[rgb(25,135,84)];
+}
